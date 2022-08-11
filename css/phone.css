@@ -11,8 +11,8 @@
     font-size: 1rem;
 }
 #navbar ul li a {
-    padding: 8px 20px;
-    font-size: 1.2rem;
+        padding: 6px 7px;
+        font-size: 1rem;
 }
 
 /*Home section */
@@ -21,7 +21,7 @@
 }
 
 #home h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 #home p {
@@ -98,6 +98,10 @@
 
 
 @media screen and (max-width: 580px) {
+    #home h1 {
+        font-size: 1.7rem;
+    }
+
     #navbar ul li a{
         margin:0px;
         padding: 5px;     
@@ -110,10 +114,13 @@
     #navbar {
         flex-direction: column;
     }
+    #home p {
+        font-size: 1.3rem;
+    }
 }    
 
 
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 390px) {
 #navbar ul li a {
     padding: 8px 20px;
     font-size: -1.2px;
@@ -135,10 +142,21 @@
 }
 
 #home h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 #home p {
     font-size: 1rem;
+}
+.center {
+    margin: 13px;
+}
+.hprimary {
+    font-size: 2.6rem;
+    padding: 0px;
+}
+#services .box {
+    margin: 0px 0px;
+    padding: 10px;
 }
 }   
