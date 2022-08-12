@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food Delivery</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+    #navbar{
+        display: flex;
+        justify-content: center;
+        color: white;
+        top: 0px;
+        position: sticky;
+    }
+
+    #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.26;   
+}
+
+#logo img {
+    margin: 11px 30px;
+    height: 65px;
+    border-radius: 70px;
+}
+.name{
+    font-size: 37px;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+/*section */
+
+#section {
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    align-items: center;
+}
+#section img{
+    height: 500px;
+    width: 500px;
+    border-radius: 75px;
+}
+
+.item {
+    border: solid 2px black;
+    margin: 26px;
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+}
+#fname{
+
+}
+#sname{
+
+}
+
+@media screen and (max-width:1160px) {
+    #section img {
+    height: 291px;
+    width: 363px;
+    border-radius: 38px;
+}
+.name{
+    font-size: 28px;
+}
+.item {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width:870px) {
+    #section img {
+    height: 170px;
+    width: 119px;
+    border-radius: 38px;
+}
+.name {
+    font-size: 15px;
+    margin: 0px;
+    padding: 10px;
+}
+.item {
+    margin: 4px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+#logo img{
+    margin: 8px 6px;
+    height: 36px;
+    border-radius: 40px;
+}
+}
+</style>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="foodzy-1.png" alt="MyOnlineMeal.com">
+        </div>
+           <div class="name" id="fname">FOOD ORDER FORM</div>
+           <div class="name" id="sname">Add Detalis</div>
+    </nav>
+
+    <section id="section">
+        <div class="item"><img src="order biscuits.jpeg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iusto ipsam excepturi enim rerum nihil ipsum atque pariatur at minima.</div>
+        <div class="item"><img src="order burger.jpg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore obcaecati deserunt? Eos dolor ut dolore ipsam qui aut </div>
+        <div class="item"><img src="order icecream.jpg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias aut culpa provident voluptatibus assumenda sequi excepturi fugit ex quia?</div>
+        <div class="item"><img src="order misal.jpg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi minus commodi autem assumenda accusamus, vel soluta alias a blanditiis!</div>
+        <div class="item"><img src="order pizza.jpg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorem dolor maiores totam incidunt quam rerum itaque nisi perferendis assumenda.</div>
+        <div class="item"><img src="order pizza1.png">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti cumque repudiandae modi numquam voluptatum dolor molestiae deserunt quasi veniam?</div>
+    </section>
+</body>
+</html>
