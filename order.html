@@ -49,8 +49,8 @@
 /*section */
 
 #section {
-    display:grid;
-    grid-template-columns: repeat(2,auto);
+    display: grid;
+    grid-template-columns: repeat(3,auto);
     justify-content: center;
     align-items: center;
 }
@@ -68,17 +68,26 @@
     justify-items: center;
     border-radius: 30px;
     font-size: 25px;
-    font-family: 'Baloo Bhai 2', cursive;
+    font-family: Okra, Helvetica, sans-serif;
     text-align: center;
 }
-#fname{
 
-}
-#sname{
-
+.item div{
+    font-family: Okra, Helvetica, sans-serif;
 }
 
+@media screen and (max-width:1770px) {
+    #section {
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    }
+}
 @media screen and (max-width:1160px) {
+
+    #section {
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    }
     #section img {
     height: 291px;
     width: 363px;
@@ -95,7 +104,46 @@
 }
 }
 
-@media screen and (max-width:870px) {
+@media screen and (max-width:860px) {
+    #section {
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    }
+    #section img {
+    height: 214px;
+    width: 190px;
+    border-radius: 38px;
+}
+.name {
+    font-size: 22px;
+    margin: 3px;
+    padding: 11px;
+}
+.item {
+    margin: 4px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+#logo img {
+    margin: 11px 6px;
+    height: 45px;
+    border-radius: 40px;
+}
+}
+
+@media screen and (max-width:700px) {
+    #section {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    }
+}
+
+@media screen and (max-width:465px) {
+    #section {
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    }
     #section img {
     height: 170px;
     width: 119px;
@@ -118,6 +166,30 @@
     border-radius: 40px;
 }
 }
+
+@media screen and (max-width:390px) {
+    #section {
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    }
+    .name {
+    font-size: 16px;
+    margin: 11px;
+    padding: 0px;
+}
+#logo img {
+    margin: 3px 5px;
+    height: 45px;
+    border-radius: 40px;
+}
+}
+
+@media screen and (max-width:315px) {
+    #section {
+    grid-template-columns: repeat(1,auto);
+    }
+}
+
 </style>
 <body>
     <nav id="navbar">
@@ -129,12 +201,12 @@
     </nav>
 
     <section id="section">
-        <div class="item"><img src="order biscuits.jpeg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iusto ipsam excepturi enim rerum nihil ipsum atque pariatur at minima.</div>
-        <div class="item"><img src="order burger.jpg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore obcaecati deserunt? Eos dolor ut dolore ipsam qui aut </div>
-        <div class="item"><img src="order icecream.jpg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias aut culpa provident voluptatibus assumenda sequi excepturi fugit ex quia?</div>
-        <div class="item"><img src="order misal.jpg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi minus commodi autem assumenda accusamus, vel soluta alias a blanditiis!</div>
-        <div class="item"><img src="order pizza.jpg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorem dolor maiores totam incidunt quam rerum itaque nisi perferendis assumenda.</div>
-        <div class="item"><img src="order pizza1.png">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti cumque repudiandae modi numquam voluptatum dolor molestiae deserunt quasi veniam?</div>
+        <div class="item"><img src="order biscuits.jpeg"><h5>BROWN BOX BISCUITS</h5> <h7>Biscuits,Fast Food</h7><h8>&#8377;90 for one</h8></div>
+        <div class="item"><img src="order burger.jpg"><h5>BURGER </h5> <h7>Burger,Fast Food</h7><h8>&#8377;150 for one</h8></div>
+        <div class="item"><img src="order icecream.jpg"><h5> VANILA ICE CREAM</h5> <h7>Ice cream,Fast Food</h7><h8>&#8377;150 for one</h8></div>
+        <div class="item"><img src="order misal.jpg"><h5>MISAL & PAV</h5> <h7>Misal & pav,Fast Food</h7><h8>&#8377;150 for one</h8></div>
+        <div class="item"><img src="order pizza.jpg"><h5>DOSA DISH</h5> <h7>Dosa,Fast Food</h7><h8>&#8377;150 for one</h8></div>
+        <div class="item"><img src="order pizza1.png"><h5>YELLOW BOX PIZZA </h5> <h7>Pizza,Fast Food</h7><h8> &#8377;150 for one</h8></div>
     </section>
 </body>
 </html>
